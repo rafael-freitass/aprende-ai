@@ -1,0 +1,122 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
+    background-color: black;
+    color: white;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 1%;
+    
+}
+select, input[type="number"] {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 3%;
+    margin-left: 25%;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bbbbbb;
+}
+
+.carregando {
+    display: none;
+    animation: rodar 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 20px;
+    width: 20px;
+}
+
+.carregandoMsg{
+    display: none;
+    margin-top: 15px;
+    margin-left: 0 auto;
+    margin-right: 10px;
+    text-align: center;
+}
+
+div, .container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes rodar {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.resultado {
+    margin: 2%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.line {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 auto;
+    width: 35%;
+    border-right: 2px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typingAnimation {
+    animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 2s steps(40) 1s normal both;
+}
+
+@keyframes blinkCursor { 
+    from{
+        border-right-color: #ffffff;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 5em;
+    }
+}
