@@ -77,18 +77,6 @@ Crie 5 questões objetivas de Matemática nível Médio. Utilize contextos e his
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
-### Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
-
-### Contato
-
-Para mais informações, entre em contato com [seu email@example.com].
-
----
-
 ### Notas
 
 - Certifique-se de ter permissões adequadas para usar a API do Google Generative AI.
